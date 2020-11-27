@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Company",
+  "info": {
+    "name": "company",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "company_name": {
+      "type": "string",
+      "required": true
+    },
+    "applicant": {
+      "via": "companies",
+      "model": "applicant"
+    },
+    "location": {
+      "type": "string"
+    }
+  }
+}
