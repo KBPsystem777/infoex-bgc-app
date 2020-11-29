@@ -36,10 +36,6 @@
     "requestor": {
       "type": "string"
     },
-    "company": {
-      "type": "string",
-      "required": true
-    },
     "email": {
       "type": "email"
     },
