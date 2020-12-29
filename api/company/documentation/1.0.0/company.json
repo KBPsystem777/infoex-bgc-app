@@ -531,12 +531,12 @@
               "id",
               "name",
               "last_name",
-              "gender",
               "birthday",
               "mobile_no",
               "address",
               "city",
-              "province"
+              "province",
+              "gender"
             ],
             "properties": {
               "id": {
@@ -549,9 +549,6 @@
                 "type": "string"
               },
               "last_name": {
-                "type": "string"
-              },
-              "gender": {
                 "type": "string"
               },
               "birthday": {
@@ -600,6 +597,12 @@
                 }
               },
               "status": {
+                "type": "string"
+              },
+              "gender": {
+                "type": "string"
+              },
+              "remarks": {
                 "type": "string"
               },
               "created_by": {

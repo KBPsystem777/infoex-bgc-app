@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/30/2020 12:42:00 AM"
+    "x-generation-date": "12/29/2020 9:32:01 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3173,12 +3173,12 @@
           "id",
           "name",
           "last_name",
-          "gender",
           "birthday",
           "mobile_no",
           "address",
           "city",
-          "province"
+          "province",
+          "gender"
         ],
         "properties": {
           "id": {
@@ -3191,9 +3191,6 @@
             "type": "string"
           },
           "last_name": {
-            "type": "string"
-          },
-          "gender": {
             "type": "string"
           },
           "birthday": {
@@ -3337,6 +3334,16 @@
               "In_Progress",
               "Not_Started"
             ]
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "Female",
+              "Male"
+            ]
+          },
+          "remarks": {
+            "type": "string"
           }
         }
       },
@@ -3344,12 +3351,12 @@
         "required": [
           "name",
           "last_name",
-          "gender",
           "birthday",
           "mobile_no",
           "address",
           "city",
-          "province"
+          "province",
+          "gender"
         ],
         "properties": {
           "name": {
@@ -3359,9 +3366,6 @@
             "type": "string"
           },
           "last_name": {
-            "type": "string"
-          },
-          "gender": {
             "type": "string"
           },
           "birthday": {
@@ -3413,6 +3417,16 @@
               "Not_Started"
             ]
           },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "Female",
+              "Male"
+            ]
+          },
+          "remarks": {
+            "type": "string"
+          },
           "created_by": {
             "type": "string"
           },
@@ -3438,12 +3452,12 @@
               "id",
               "name",
               "last_name",
-              "gender",
               "birthday",
               "mobile_no",
               "address",
               "city",
-              "province"
+              "province",
+              "gender"
             ],
             "properties": {
               "id": {
@@ -3456,9 +3470,6 @@
                 "type": "string"
               },
               "last_name": {
-                "type": "string"
-              },
-              "gender": {
                 "type": "string"
               },
               "birthday": {
@@ -3507,6 +3518,12 @@
                 }
               },
               "status": {
+                "type": "string"
+              },
+              "gender": {
+                "type": "string"
+              },
+              "remarks": {
                 "type": "string"
               },
               "created_by": {

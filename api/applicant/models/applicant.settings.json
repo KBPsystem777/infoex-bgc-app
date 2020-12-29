@@ -22,10 +22,6 @@
       "type": "string",
       "required": true
     },
-    "gender": {
-      "type": "string",
-      "required": true
-    },
     "birthday": {
       "type": "date",
       "required": true
@@ -85,6 +81,17 @@
         "In_Progress",
         "Not_Started"
       ]
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "Female",
+        "Male"
+      ],
+      "required": true
+    },
+    "remarks": {
+      "type": "richtext"
     }
   }
 }
