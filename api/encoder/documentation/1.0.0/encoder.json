@@ -526,6 +526,102 @@
           "name": {
             "type": "string"
           },
+          "applicant": {
+            "required": [
+              "id",
+              "name",
+              "last_name",
+              "birthday",
+              "mobile_no",
+              "address",
+              "city",
+              "province",
+              "gender"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "middle_name": {
+                "type": "string"
+              },
+              "last_name": {
+                "type": "string"
+              },
+              "birthday": {
+                "type": "string"
+              },
+              "sss_number": {
+                "type": "string"
+              },
+              "requestor": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "mobile_no": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "province": {
+                "type": "string"
+              },
+              "date_submitted": {
+                "type": "string"
+              },
+              "attachments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "companies": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "status": {
+                "type": "string"
+              },
+              "gender": {
+                "type": "string"
+              },
+              "remarks": {
+                "type": "string"
+              },
+              "profile_pic": {
+                "type": "string"
+              },
+              "encoders": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "report_analysts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -538,6 +634,9 @@
         ],
         "properties": {
           "name": {
+            "type": "string"
+          },
+          "applicant": {
             "type": "string"
           },
           "published_at": {

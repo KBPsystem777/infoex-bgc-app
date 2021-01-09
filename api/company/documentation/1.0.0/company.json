@@ -602,11 +602,17 @@
               "profile_pic": {
                 "type": "string"
               },
-              "encoder": {
-                "type": "string"
+              "encoders": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
-              "report_analyst": {
-                "type": "string"
+              "report_analysts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "created_by": {
                 "type": "string"

@@ -96,11 +96,13 @@
       "plugin": "upload",
       "required": false
     },
-    "encoder": {
-      "model": "encoder"
+    "encoders": {
+      "collection": "encoder",
+      "via": "applicant"
     },
-    "report_analyst": {
-      "model": "report-analyst"
+    "report_analysts": {
+      "collection": "report-analyst",
+      "via": "applicant"
     }
   }
 }

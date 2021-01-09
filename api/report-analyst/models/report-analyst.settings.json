@@ -14,6 +14,10 @@
     "name": {
       "type": "string",
       "required": true
+    },
+    "applicant": {
+      "via": "report_analysts",
+      "model": "applicant"
     }
   }
 }
