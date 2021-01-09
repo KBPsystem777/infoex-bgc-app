@@ -51,12 +51,6 @@
       "type": "string",
       "required": true
     },
-    "encoder": {
-      "type": "string"
-    },
-    "report_analyst": {
-      "type": "string"
-    },
     "date_submitted": {
       "type": "date"
     },
@@ -101,6 +95,12 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "encoder": {
+      "model": "encoder"
+    },
+    "report_analyst": {
+      "model": "report-analyst"
     }
   }
 }

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/encoders",
+      "handler": "encoder.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/encoders/count",
+      "handler": "encoder.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/encoders/:id",
+      "handler": "encoder.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/encoders",
+      "handler": "encoder.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/encoders/:id",
+      "handler": "encoder.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/encoders/:id",
+      "handler": "encoder.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
