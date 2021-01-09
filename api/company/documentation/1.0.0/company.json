@@ -599,9 +599,6 @@
               "remarks": {
                 "type": "string"
               },
-              "profile_pic": {
-                "type": "string"
-              },
               "encoders": {
                 "type": "array",
                 "items": {
