@@ -11,13 +11,13 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
+    "full_name": {
       "type": "string",
       "required": true
     },
     "applicant": {
-      "via": "encoders",
-      "model": "applicant"
+      "model": "applicant",
+      "via": "encoders"
     }
   }
 }

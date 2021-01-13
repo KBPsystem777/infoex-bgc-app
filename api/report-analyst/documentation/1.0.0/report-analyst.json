@@ -530,13 +530,13 @@
       "Report-analyst": {
         "required": [
           "id",
-          "name"
+          "full_name"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "name": {
+          "full_name": {
             "type": "string"
           },
           "applicant": {
@@ -640,10 +640,10 @@
       },
       "NewReport-analyst": {
         "required": [
-          "name"
+          "full_name"
         ],
         "properties": {
-          "name": {
+          "full_name": {
             "type": "string"
           },
           "applicant": {

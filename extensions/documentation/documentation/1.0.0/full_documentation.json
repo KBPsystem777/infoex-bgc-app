@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/10/2021 1:53:55 AM"
+    "x-generation-date": "01/13/2021 11:55:57 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4379,13 +4379,13 @@
             "items": {
               "required": [
                 "id",
-                "name"
+                "full_name"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "name": {
+                "full_name": {
                   "type": "string"
                 },
                 "applicant": {
@@ -4408,13 +4408,13 @@
             "items": {
               "required": [
                 "id",
-                "name"
+                "full_name"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "name": {
+                "full_name": {
                   "type": "string"
                 },
                 "applicant": {
@@ -4663,13 +4663,13 @@
       "Encoder": {
         "required": [
           "id",
-          "name"
+          "full_name"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "name": {
+          "full_name": {
             "type": "string"
           },
           "applicant": {
@@ -4773,10 +4773,10 @@
       },
       "NewEncoder": {
         "required": [
-          "name"
+          "full_name"
         ],
         "properties": {
-          "name": {
+          "full_name": {
             "type": "string"
           },
           "applicant": {
@@ -4797,13 +4797,13 @@
       "Report-analyst": {
         "required": [
           "id",
-          "name"
+          "full_name"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "name": {
+          "full_name": {
             "type": "string"
           },
           "applicant": {
@@ -4907,10 +4907,10 @@
       },
       "NewReport-analyst": {
         "required": [
-          "name"
+          "full_name"
         ],
         "properties": {
-          "name": {
+          "full_name": {
             "type": "string"
           },
           "applicant": {

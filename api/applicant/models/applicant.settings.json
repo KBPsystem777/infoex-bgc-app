@@ -88,12 +88,12 @@
       "type": "richtext"
     },
     "encoders": {
-      "collection": "encoder",
-      "via": "applicant"
+      "via": "applicant",
+      "collection": "encoder"
     },
     "report_analysts": {
-      "collection": "report-analyst",
-      "via": "applicant"
+      "via": "applicant",
+      "collection": "report-analyst"
     }
   }
 }
