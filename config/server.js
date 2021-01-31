@@ -1,5 +1,3 @@
-const forgotPasswordTemplate = require("./email-templates/forgotPassword");
-
 module.exports = ({ env }) => ({
   host: env("HOST", "0.0.0.0"),
   port: env.int("PORT", 1337),
@@ -10,7 +8,6 @@ module.exports = ({ env }) => ({
     forgotPassword: {
       from: env("EMAIL_ADDRESS"),
       replyTo: env("EMAIL_ADDRESS"),
-      emailTemplate: forgotPasswordTemplate,
     },
   },
 });
