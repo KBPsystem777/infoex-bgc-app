@@ -2,7 +2,7 @@
   "name": "infoex-web-app",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "InfoEx Screening API",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -30,8 +30,8 @@
     "uuid": "2168b3d4-716b-4b94-bd95-4fc675027069"
   },
   "engines": {
-    "node": ">=10.16.0 <=14.x.x",
-    "npm": ">=6.0.0"
+    "node": "14.x",
+    "npm": "6.x"
   },
   "license": "MIT"
 }
