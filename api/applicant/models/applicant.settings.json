@@ -64,10 +64,6 @@
       "plugin": "upload",
       "required": false
     },
-    "companies": {
-      "collection": "company",
-      "via": "applicant"
-    },
     "status": {
       "type": "enumeration",
       "enum": [
@@ -87,13 +83,17 @@
     "remarks": {
       "type": "richtext"
     },
-    "encoders": {
-      "via": "applicant",
-      "collection": "encoder"
+    "encoder": {
+      "type": "string",
+      "required": true
     },
-    "report_analysts": {
-      "via": "applicant",
-      "collection": "report-analyst"
+    "report_analyst": {
+      "type": "string",
+      "required": true
+    },
+    "company": {
+      "type": "string",
+      "required": true
     }
   }
 }

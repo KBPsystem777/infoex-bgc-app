@@ -14,10 +14,6 @@
     "full_name": {
       "type": "string",
       "required": true
-    },
-    "applicant": {
-      "model": "applicant",
-      "via": "encoders"
     }
   }
 }

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/01/2021 12:19:37 AM"
+    "x-generation-date": "02/28/2021 1:26:55 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4213,7 +4213,10 @@
           "address",
           "city",
           "province",
-          "gender"
+          "gender",
+          "encoder",
+          "report_analyst",
+          "company"
         ],
         "properties": {
           "id": {
@@ -4327,35 +4330,6 @@
               }
             }
           },
-          "companies": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "company_name"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "company_name": {
-                  "type": "string"
-                },
-                "applicant": {
-                  "type": "string"
-                },
-                "location": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "status": {
             "type": "string",
             "enum": [
@@ -4374,63 +4348,14 @@
           "remarks": {
             "type": "string"
           },
-          "encoders": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "full_name"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "full_name": {
-                  "type": "string"
-                },
-                "applicant": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "encoder": {
+            "type": "string"
           },
-          "report_analysts": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "full_name"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "full_name": {
-                  "type": "string"
-                },
-                "applicant": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "report_analyst": {
+            "type": "string"
+          },
+          "company": {
+            "type": "string"
           }
         }
       },
@@ -4443,7 +4368,10 @@
           "address",
           "city",
           "province",
-          "gender"
+          "gender",
+          "encoder",
+          "report_analyst",
+          "company"
         ],
         "properties": {
           "name": {
@@ -4484,12 +4412,6 @@
             "type": "string",
             "format": "date"
           },
-          "companies": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
           "status": {
             "type": "string",
             "enum": [
@@ -4508,17 +4430,14 @@
           "remarks": {
             "type": "string"
           },
-          "encoders": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "encoder": {
+            "type": "string"
           },
-          "report_analysts": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "report_analyst": {
+            "type": "string"
+          },
+          "company": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
@@ -4539,102 +4458,6 @@
           },
           "company_name": {
             "type": "string"
-          },
-          "applicant": {
-            "required": [
-              "id",
-              "name",
-              "last_name",
-              "birthday",
-              "mobile_no",
-              "address",
-              "city",
-              "province",
-              "gender"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "middle_name": {
-                "type": "string"
-              },
-              "last_name": {
-                "type": "string"
-              },
-              "birthday": {
-                "type": "string"
-              },
-              "sss_number": {
-                "type": "string"
-              },
-              "requestor": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "mobile_no": {
-                "type": "string"
-              },
-              "address": {
-                "type": "string"
-              },
-              "city": {
-                "type": "string"
-              },
-              "province": {
-                "type": "string"
-              },
-              "date_submitted": {
-                "type": "string"
-              },
-              "attachments": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "companies": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "status": {
-                "type": "string"
-              },
-              "gender": {
-                "type": "string"
-              },
-              "remarks": {
-                "type": "string"
-              },
-              "encoders": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "report_analysts": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "location": {
-            "type": "string"
           }
         }
       },
@@ -4644,12 +4467,6 @@
         ],
         "properties": {
           "company_name": {
-            "type": "string"
-          },
-          "applicant": {
-            "type": "string"
-          },
-          "location": {
             "type": "string"
           },
           "created_by": {
@@ -4672,99 +4489,6 @@
           "full_name": {
             "type": "string"
           },
-          "applicant": {
-            "required": [
-              "id",
-              "name",
-              "last_name",
-              "birthday",
-              "mobile_no",
-              "address",
-              "city",
-              "province",
-              "gender"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "middle_name": {
-                "type": "string"
-              },
-              "last_name": {
-                "type": "string"
-              },
-              "birthday": {
-                "type": "string"
-              },
-              "sss_number": {
-                "type": "string"
-              },
-              "requestor": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "mobile_no": {
-                "type": "string"
-              },
-              "address": {
-                "type": "string"
-              },
-              "city": {
-                "type": "string"
-              },
-              "province": {
-                "type": "string"
-              },
-              "date_submitted": {
-                "type": "string"
-              },
-              "attachments": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "companies": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "status": {
-                "type": "string"
-              },
-              "gender": {
-                "type": "string"
-              },
-              "remarks": {
-                "type": "string"
-              },
-              "encoders": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "report_analysts": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -4777,9 +4501,6 @@
         ],
         "properties": {
           "full_name": {
-            "type": "string"
-          },
-          "applicant": {
             "type": "string"
           },
           "published_at": {
@@ -4806,99 +4527,6 @@
           "full_name": {
             "type": "string"
           },
-          "applicant": {
-            "required": [
-              "id",
-              "name",
-              "last_name",
-              "birthday",
-              "mobile_no",
-              "address",
-              "city",
-              "province",
-              "gender"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "middle_name": {
-                "type": "string"
-              },
-              "last_name": {
-                "type": "string"
-              },
-              "birthday": {
-                "type": "string"
-              },
-              "sss_number": {
-                "type": "string"
-              },
-              "requestor": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "mobile_no": {
-                "type": "string"
-              },
-              "address": {
-                "type": "string"
-              },
-              "city": {
-                "type": "string"
-              },
-              "province": {
-                "type": "string"
-              },
-              "date_submitted": {
-                "type": "string"
-              },
-              "attachments": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "companies": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "status": {
-                "type": "string"
-              },
-              "gender": {
-                "type": "string"
-              },
-              "remarks": {
-                "type": "string"
-              },
-              "encoders": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "report_analysts": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -4911,9 +4539,6 @@
         ],
         "properties": {
           "full_name": {
-            "type": "string"
-          },
-          "applicant": {
             "type": "string"
           },
           "published_at": {

@@ -14,13 +14,6 @@
     "company_name": {
       "type": "string",
       "required": true
-    },
-    "applicant": {
-      "via": "companies",
-      "model": "applicant"
-    },
-    "location": {
-      "type": "string"
     }
   }
 }
